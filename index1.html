@@ -1,0 +1,60 @@
+<html>
+<head>
+   <title>Best Players</title>
+   <style>
+   body{
+      font-family:arial;
+      background-image:url(images/backgrounds/background.jpg);
+   }
+   h1{   
+      background-color:red;
+      color:white;
+   }
+   h2{
+     cursor:pointer;
+   }
+   .PlayerName{
+      color:#666;
+   }
+   #KingJames{
+      color:#ffcc00;
+      background-color:maroon;
+   }
+   </style>
+   <script src="javascript/jquery.js"></script> 
+
+   <script type='text/javascript'>
+      $(function(){
+          
+      });
+   </script>
+</head>
+<body>
+   <h1>Best Players</h1>
+
+   <div>
+      <h2 class='PlayerName' style='background-color:blue; color:yellow;' onclick='$("#StephHidden").toggle();'>Stephen Curry</h2>
+      <div id='StephHidden' style='display:none;'>
+      <p>He's a three point specialist</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xy0p42tfhsE" frameborder="0" allowfullscreen></iframe>
+   </div>
+      </div>
+
+   <div>
+      <h2 class='PlayerName' style='background-color:red; color:white;' onclick='$("#DurantHidden").toggle();'>Kevin Durant</h2>
+      <div id='DurantHidden' style='display:none;'>
+      <p>He won an MVP and now plays for Golden State</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jKN1MsM4Pj8" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </div>
+
+   <div>
+      <h2 class='PlayerName' id='KingJames' onclick='$("#JamesHidden").toggle();'>King James</h2>
+      <div id='JamesHidden' style='display:none;'>
+      <p>He just won a championship</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ixqLUQxgI-c" frameborder="0" allowfullscreen></iframe>
+      </div>
+   </div>
+
+</body>
+</html>
